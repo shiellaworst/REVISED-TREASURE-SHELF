@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Treasure-Shelf</title>
+
+		<!-- tailwind -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://cdn.tailwindcss.com"></script>
+	</head>
+	<body class="bg-[#F2E5D0]">
+		<!--* Header-->
+		<nav
+			class="bg-transparent mx-auto max-w-6xl w-11/12 flex justify-between items-center h-[91px]"
+		>
+			<!--* Left Side -->
+			<img src="images/LOGO3BB.png" alt="logo" class="w-[80px] h-[80px]" />
+			<!--* Right Side -->
+			<div class="flex gap-9">
+				<a class="text-black p-2 font-bold hover:text-[#FCA72B]" href="#"
+					>About</a
+				>
+				<a class="text-black p-2 font-bold hover:text-[#FCA72B]" href="#"
+					>Contact Us</a
+				>
+				<a
+					class="py-2 px-8 text-black bg-[#FCA72B] hover:bg-[#F9F3EE] rounded-[20px] font-bold hover:text-yellow-800 transition ease-in duration-150"
+					href="#"
+					>LOGIN</a
+				>
+			</div>
+		</nav>
+		<!--* Banner -->
+		<div
+			class="w-full h-auto md:h-[550px] text-center"
+			style="
+				background-image: url('images/bannerPhoto.png');
+				background-repeat: no-repeat;
+				background-size: cover;
+			"
+		>
+			<div class="max-w-6xl mx-auto :w-11/12 flex items-center flex-col gap-4">
+				<div class="w-full md:w-5/6 mt-8">
+					<h1 class="font-bold text-3xl md:text-5xl font-sans">
+						Treasure Shelf: Book Recommendation
+					</h1>
+				</div>
+				<div class="w-3/4 md:w-2/4">
+					<p class="text-slate-700">
+						Helps readers have access to books that have a wide variety of the
+						content available. The proposed application will address the growing
+						need for a more convenient and efficient way of discovering books in
+						the digital age.
+					</p>
+				</div>
+
+				<div class="flex gap-11 mt-8">
+					<div
+						class="bg-[#F9F3EE] border border-black w-24 h-24 md:w-52 md:h-52 p-4 flex flex-col justify-between rounded-lg"
+					>
+						<div></div>
+						<h1 class="font-black text-lg md:text-5xl text-[#FCA72B]">
+							10600+
+						</h1>
+
+						<p class="text-[#715C3A] font-thin text-lg">Books</p>
+					</div>
+
+					<div
+						class="bg-[#F9F3EE] border border-black w-24 h-24 md:w-52 md:h-52 p-4 flex flex-col justify-between rounded-lg"
+					>
+						<div></div>
+						<h1 class="font-black text-lg md:text-5xl text-[#FCA72B]">6999+</h1>
+
+						<p class="text-[#715C3A] font-thin text-lg">Authors</p>
+					</div>
+
+					<div
+						class="bg-[#F9F3EE] border border-black w-24 h-24 md:w-52 md:h-52 p-4 flex flex-col justify-between rounded-lg"
+					>
+						<div></div>
+						<h1 class="font-black text-lg md:text-5xl text-[#FCA72B]">3090+</h1>
+
+						<p class="text-[#715C3A] font-thin text-lg">Genres</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="max-w-6xl mx-auto flex justify-center mt-4 md:-mt-7">
+			<div class="w-11/12 md:w-8/12 relative">
+				<input
+					type="text"
+					class="border border-black bg-[#F9F3EE] rounded-[59px] px-6 py-2 md:py-4 w-full"
+					placeholder="Search..."
+				/>
+
+				<button class="absolute right-6 bottom-2 md:bottom-4">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="w-6 h-6 text-slate-700"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+						/>
+					</svg>
+				</button>
+			</div>
+		</div>
+
+		<!--* Cards -->
+		<section class="max-w-6xl mx-auto w-11/12">
+			<div
+				class="grid grid-cols-2 overflow-hidden md:grid-cols-4 gap-3 md:px-32 mt-8 mb-8"
+			>
+				<a href="">
+					<div
+						class="rounded shadow-lg bg-[#716363] h-72 p-4 grid justify-items-center text-center"
+					>
+						<img
+							class="h-[230px] w-full rounded"
+							src="images/nd.jpg"
+							alt="Image description"
+						/>
+
+						<p class="text-[#F9F3EE] font-normal text-lg card-title">
+							TitleTitleTitleTitleTitle
+						</p>
+					</div>
+				</a>
+
+				<a href="">
+					<div
+						class="rounded shadow-lg bg-[#716363] h-72 p-4 grid justify-items-center text-center"
+					>
+						<img
+							class="h-[230px] w-full rounded"
+							src="images/nd.jpg"
+							alt="Image description"
+						/>
+
+						<p class="text-[#F9F3EE] font-normal text-lg card-title">Title</p>
+					</div>
+				</a>
+
+				<a href="">
+					<div
+						class="rounded shadow-lg bg-[#716363] h-72 p-4 grid justify-items-center text-center"
+					>
+						<img
+							class="h-[230px] w-full rounded"
+							src="images/nd.jpg"
+							alt="Image description"
+						/>
+
+						<p class="text-[#F9F3EE] font-normal text-lg card-title">Title</p>
+					</div>
+				</a>
+
+				<a href="">
+					<div
+						class="rounded shadow-lg bg-[#716363] h-72 p-4 grid justify-items-center text-center"
+					>
+						<img
+							class="h-[230px] w-full rounded"
+							src="images/nd.jpg"
+							alt="Image description"
+						/>
+
+						<p class="text-[#F9F3EE] font-normal text-lg card-title">
+							Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+							Delectus, fugiat, quia omnis ea vel nisi aliquid reiciendis
+							accusamus maiores officia beatae magni cum provident error,
+							voluptatibus vitae deserunt. Tempore, eligendi.
+						</p>
+					</div>
+				</a>
+			</div>
+		</section>
+
+		<section class="mx-auto max-w-6xl w-11/12">
+			<h1 class="font-medium text-2xl font-sans md:mb-0 mb-4">
+				Explore more category
+			</h1>
+
+			<div
+				class="w-full md:p-16 grid grid-cols-3 md:grid-cols-4 gap-3 md:gap-14"
+			>
+				<div
+					class="flex text-center border overflow-hidden border-black rounded-full p-4 bg-[#F9F3EE] cursor-pointer"
+				>
+					<img src="images/icons/horror.png" alt="" class="w-auto h-10" />
+					<h1 class="text-xl font-sans font-thin flex-grow">Horror</h1>
+				</div>
+				<div
+					class="flex text-center border border-black rounded-full p-4 bg-[#F9F3EE] cursor-pointer"
+				>
+					<img src="images/icons/alien.png" alt="" class="w-auto h-10" />
+					<h1 class="text-xl font-sans font-thin flex-grow">Sci-fi</h1>
+				</div>
+				<div
+					class="flex text-center border border-black rounded-full p-4 bg-[#F9F3EE] cursor-pointer"
+				>
+					<img src="images/icons/myth 1.png" alt="" class="w-auto h-10" />
+					<h1 class="text-xl font-sans font-thin flex-grow">Mythology</h1>
+				</div>
+				<div
+					class="flex text-center border border-black rounded-full p-4 bg-[#F9F3EE] cursor-pointer"
+				>
+					<img src="images/icons/drama 1.png" alt="" class="w-auto h-10" />
+					<h1 class="text-xl font-sans font-thin flex-grow">Drama</h1>
+				</div>
+				<div
+					class="flex text-center border border-black rounded-full p-4 bg-[#F9F3EE] cursor-pointer"
+				>
+					<img src="images/icons/love 1.png" alt="" class="w-auto h-10" />
+					<h1 class="text-xl font-sans font-thin flex-grow">Romance</h1>
+				</div>
+				<div
+					class="flex text-center border border-black rounded-full p-4 bg-[#F9F3EE] cursor-pointer"
+				>
+					<img src="images/icons/fiction 1.png" alt="" class="w-auto h-10" />
+					<h1 class="text-xl font-sans font-thin flex-grow">Fiction</h1>
+				</div>
+				<div
+					class="flex text-center border border-black rounded-full p-4 bg-[#F9F3EE] cursor-pointer"
+				>
+					<img src="images/icons/history 1.png" alt="" class="w-auto h-10" />
+					<h1 class="text-xl font-sans font-thin flex-grow">History</h1>
+				</div>
+
+				<div
+					class="flex text-center border border-black rounded-full p-4 bg-[#F9F3EE] cursor-pointer"
+				>
+					<img src="images/icons/fable 1.png" alt="" class="w-auto h-10" />
+					<h1 class="text-xl font-sans font-thin flex-grow">Fable</h1>
+				</div>
+				<div class="hidden md:block"></div>
+				<div
+					class="flex text-center border border-black rounded-full p-4 bg-[#F9F3EE] cursor-pointer"
+				>
+					<img
+						src="images/icons/toyota girl 1.png"
+						alt=""
+						class="w-auto h-10"
+					/>
+					<h1 class="text-xl font-sans font-thin flex-grow">Novel</h1>
+				</div>
+
+				<div
+					class="flex text-center border border-black rounded-full p-4 bg-[#F9F3EE] cursor-pointer"
+				>
+					<img src="images/icons/kid 1.png" alt="" class="w-auto h-10" />
+					<h1 class="text-xl font-sans font-thin flex-grow">Self Help</h1>
+				</div>
+				<div class="hidden md:block"></div>
+			</div>
+		</section>
+
+		<!--* Footer + Newsletters -->
+	</body>
+
+	<script>
+		const titleElements = document.querySelectorAll(".card-title");
+
+		titleElements.forEach((titleElement) => {
+			const titleText = titleElement.textContent;
+
+			if (titleText.length > 25) {
+				const truncatedTitle = titleText.substring(0, 30) + "...";
+				titleElement.textContent = truncatedTitle;
+			}
+		});
+	</script>
+</html>
