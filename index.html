@@ -7,8 +7,14 @@
 		<title>Treasure-Shelf</title>
 
 		<!-- tailwind -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="https://cdn.tailwindcss.com/2.2.16/tailwind.min.css">
+
+	<!-- splide -->
+        <link rel="stylesheet" href="https://unpkg.com/@splidejs/splide@3.0.7/dist/css/splide.min.css">
+        <script src="https://unpkg.com/@splidejs/splide@3.0.7/dist/js/splide.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+
 	</head>
 	<body class="bg-[#F2E5D0]">
 		<!--* Header-->
@@ -89,7 +95,7 @@
 			</div>
 		</div>
 
-		<div class="max-w-6xl mx-auto flex justify-center mt-4 md:-mt-7">
+		<div class="max-w-6xl mx-auto flex justify-center mt-4 md:-mt-7 mb-[50px]">
 			<div class="w-11/12 md:w-8/12 relative">
 				<input
 					type="text"
@@ -118,76 +124,100 @@
 
 		<!--* Cards -->
 		<section class="max-w-6xl mx-auto w-11/12">
-			<div
-				class="grid grid-cols-2 overflow-hidden md:grid-cols-4 gap-3 md:px-32 mt-8 mb-8"
-			>
-				<a href="">
-					<div
-						class="rounded shadow-lg bg-[#716363] h-72 p-4 grid justify-items-center text-center"
-					>
-						<img
-							class="h-[230px] w-full rounded"
-							src="images/nd.jpg"
-							alt="Image description"
-						/>
 
-						<p class="text-[#F9F3EE] font-normal text-lg card-title">
-							TitleTitleTitleTitleTitle
-						</p>
-					</div>
-				</a>
+			<h1 class="font-medium text-3xl font-sans md:mb-0 mb-4">
+				Hottest books of the moment
+			</h1>
+            <p class="text-slate-700 text-xl">
+                Explore the bestselling books from various online shops, 
+                featuring captivating stories and valuable knowledge 
+                that have captured readers' attention worldwide.
+            </p>
 
-				<a href="">
-					<div
-						class="rounded shadow-lg bg-[#716363] h-72 p-4 grid justify-items-center text-center"
-					>
-						<img
-							class="h-[230px] w-full rounded"
-							src="images/nd.jpg"
-							alt="Image description"
-						/>
+			<div id="image-carousel" class="splide grid-cols-2 overflow-hidden md:grid-cols-4 gap-3 md:px-32 mt-8 mb-8" aria-label="Best seller">
+                <div class="splide__track">
+                  <ul class="splide__list gap-[15px]">
+                    <li class="splide__slide ">
+                        
+                        <a href="">
+                        <div class="rounded-[10px] shadow-lg bg-yellow-800 h-72 p-4 grid justify-items-center text-center">
+                            
+                            <img class="h-[230px] w-full rounded"
+                            src="images/sh.jpg" 
+                            alt="Image Description">
+                            <p class="text-[#FCA72B] font-normal text-lg card-title">Title 1</p>
 
-						<p class="text-[#F9F3EE] font-normal text-lg card-title">Title</p>
-					</div>
-				</a>
+                        </div>
+                    </a>
+                    </li>
 
-				<a href="">
-					<div
-						class="rounded shadow-lg bg-[#716363] h-72 p-4 grid justify-items-center text-center"
-					>
-						<img
-							class="h-[230px] w-full rounded"
-							src="images/nd.jpg"
-							alt="Image description"
-						/>
+                    <li class="splide__slide">
+                        
+                        <a href="">
+                        <div class="rounded-[10px] shadow-lg bg-yellow-800 h-72 p-4 grid justify-items-center text-center">
+                            
+                            <img class="h-[230px] w-full rounded"
+                            src="images/sh.jpg" 
+                            alt="Image Description">
+                            <p class="text-[#FCA72B] font-normal text-lg card-title">Title 2</p>
 
-						<p class="text-[#F9F3EE] font-normal text-lg card-title">Title</p>
-					</div>
-				</a>
+                        </div>
+                    </a>
+                    </li>
+                    
+                    <li class="splide__slide">
+                        
+                        <a href="">
+                        <div class="rounded-[10px] shadow-lg bg-yellow-800 h-72 p-4 grid justify-items-center text-center">
+                            
+                            <img class="h-[230px] w-full rounded"
+                            src="images/sh.jpg" 
+                            alt="Image Description">
+                            <p class="text-[#FCA72B] font-normal text-lg card-title">Title 3</p>
 
-				<a href="">
-					<div
-						class="rounded shadow-lg bg-[#716363] h-72 p-4 grid justify-items-center text-center"
-					>
-						<img
-							class="h-[230px] w-full rounded"
-							src="images/nd.jpg"
-							alt="Image description"
-						/>
+                        </div>
+                    </a>
+                    </li>
 
-						<p class="text-[#F9F3EE] font-normal text-lg card-title">
-							Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-							Delectus, fugiat, quia omnis ea vel nisi aliquid reiciendis
-							accusamus maiores officia beatae magni cum provident error,
-							voluptatibus vitae deserunt. Tempore, eligendi.
-						</p>
-					</div>
-				</a>
-			</div>
+
+                    <li class="splide__slide ">
+                        
+                        <a href="">
+                        <div class="rounded-[10px] shadow-lg bg-yellow-800 h-72 p-4 grid justify-items-center text-center">
+                            
+                            <img class="h-[230px] w-full rounded"
+                            src="images/sh.jpg" 
+                            alt="Image Description">
+                            <p class="text-[#FCA72B] font-normal text-lg card-title">Title4</p>
+
+                        </div>
+                    </a>
+                    </li>
+
+                    <li class="splide__slide ">
+                        
+                        <a href="">
+                        <div class="rounded-[10px] shadow-lg bg-yellow-800 h-72 p-4 grid justify-items-center text-center">
+                            
+                            <img class="h-[230px] w-full rounded"
+                            src="images/sh.jpg" 
+                            alt="Image Description">
+                            <p class="text-[#FCA72B] font-normal text-lg card-title">Title5</p>
+
+                        </div>
+                    </a>
+                    </li>
+
+                  </ul>
+                </div>
+            </div>
+
+
+
 		</section>
 
 		<section class="mx-auto max-w-6xl w-11/12">
-			<h1 class="font-medium text-2xl font-sans md:mb-0 mb-4">
+			<h1 class="font-medium text-3xl font-sans md:mb-0 mb-4">
 				Explore more category
 			</h1>
 
@@ -265,10 +295,51 @@
 			</div>
 		</section>
 
+
+		<!-- Online bookstores -->
+	
+		<section class="mx-auto max-w-6xl w-11/12 m-[20px]">
+			<h1 class="font-medium text-3xl font-sans md:mb-0 mb-4">
+				Shops we offer
+			</h1>
+			
+		</section>
+		
+		<!-- Famous Quote about books -->
+		<div class="w-full h-auto md:h-[200px] text-center bg-[#C9C9C9]">
+		<div class="max-w-6xl mx-auto :w-11/12 flex items-center flex-col gap-4">
+			<div class="w-full md:w-5/6 mt-8">
+				<h1 class="font-bold text-3xl md:text-4xl font-ui-sans">
+					"The more that you read, the more things you will know. 
+					The more that you learn, the more places you'll go."
+				</h1>
+				<h1 class="font-medium text-3xl font-sans md:mb-0 mb-4 m-[20px]">
+					Dr. Seuss
+				</h1>
+			</div>
+		</div>
 		<!--* Footer + Newsletters -->
+
+
 	</body>
 
 	<script>
+
+		document.addEventListener('DOMContentLoaded', function () {
+			const splide = new Splide('#image-carousel', {
+				type: 'loop',
+				drag: 'free',
+				focus: 'center',
+				perPage: 4,
+				autoScroll: {
+				speed: 3,
+				},
+				autoStart: boolean = true,
+			});
+
+			splide.mount( window.splide.Extensions );
+		});
+
 		const titleElements = document.querySelectorAll(".card-title");
 
 		titleElements.forEach((titleElement) => {
