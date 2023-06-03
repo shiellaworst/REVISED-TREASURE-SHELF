@@ -1,0 +1,600 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+@import url('https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css');
+
+
+:root {
+    /* ===== Color scheme ===== */
+    --primary-bg-color: #E5DDD3;
+    --secondary-bg-color: #30414B;
+    --text-color: #000;
+
+    /* ===== Color scheme ===== */
+    --btn-bg-color: #BCC4C9;
+
+
+    /* ====== Transition ====== */
+    --tran-05: all 0.5s ease;
+    --tran-03: all 0.3s ease;
+    --tran-03: all 0.2s ease;
+
+    /* ====== Logo ====== */
+    /* --logo: url('image/logo.png') */
+}
+
+body {
+    background-color: #F2E5D0 !important;
+}
+
+.user-profile .header {
+    display: flex;
+    justify-content: center;
+    color: #715C3A;
+}
+
+.user-profile .back {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    width: 100vw;
+    margin-right: 100px;
+}
+
+.user-profile .back1 {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.user-profile .back h1 {
+    font-size: 25px;
+    margin: 25px 25px 25px 25px;
+}
+
+
+.user-profile i {
+    font-size: 25px;
+    margin: 25px 40px 25px 15px;
+    cursor: pointer;
+}
+
+
+.user-profile .cntn {
+    background-color: #F9F3EE;
+    border-radius: 5px;
+    padding: 50px;
+    margin: 25px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.user-profile .name {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 25px;
+    max-width: 100vw;
+}
+
+.user-profile .name h6 {
+    color: #656565;
+    font-size: 18px;
+}
+
+.user-profile .name img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: 25% 25%;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    border-style: solid;
+    border-width: 1px;
+
+}
+
+.cntn .banner {
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+
+.cntn .banner img {
+    display: flex;
+    margin: 35px 25px 25px 0px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+    object-fit: cover;
+}
+
+.cntn .banner .menu {
+    margin-top: 50px;
+}
+
+.cntn .banner .menu li {
+    list-style-type: none;
+
+}
+
+.menu li .btn {
+    background-color: #715C3A;
+    color: white;
+    padding: 5px 25px 10px 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 300px;
+    text-align: left;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+
+form i {
+    margin-left: -20px;
+    position: absolute;
+}
+
+.img-prev {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#img-preview {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    height: 300px;
+    width: 360px;
+    border: 2px dashed #333;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+#img-preview img {
+    width: 250px;
+    height: 255px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 10px;
+    object-fit: cover;
+
+}
+
+.cntn .edit-con {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.edit-con .image-upload img {
+    width: 25px;
+    position: absolute;
+    margin: 20px 0px 0px -40px;
+    cursor: pointer;
+}
+
+.info {
+    justify-content: center;
+}
+
+.info .info-input {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.info h6 {
+    margin-top: 20px;
+    color: #715C3A;
+}
+
+.info input[type=text] {
+    border: none;
+    border-bottom: 2px solid #715C3A;
+    background-color: transparent;
+    width: 335px;
+    margin: 0px 0 0 0px;
+    text-indent: 8px;
+}
+
+.info input[type=password] {
+    border: none;
+    border-bottom: 2px solid #715C3A;
+    background-color: transparent;
+    width: 335px;
+    margin: 0px 0 0 0px;
+    text-indent: 8px;
+}
+
+.submit-btn {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.submit-btn input[type=submit] {
+    border: none;
+    border-radius: 5px;
+    background-color: #715C3A;
+    color: white;
+    font-size: 12px;
+    width: 200px;
+    height: 40px;
+}
+
+.info-input .warn span {
+    display: block;
+    justify-content: center;
+    font-size: 15px;
+    max-width: 320px;
+    text-align: justify;
+}
+
+.info-input i {
+    margin: -2px 0 0 -25px;
+    font-size: 20px;
+}
+
+
+
+/* ====== Banner Slideshow ====== */
+
+.mySlides {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .75
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .text {
+        font-size: 11px
+    }
+}
+
+
+/* ====== Contact Us Css ====== */
+
+.socmed{
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.socmed .box{
+    background-color:#c5c4c4;
+    width: 400px;
+    height: 280px;
+    border-radius: 20px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.309);
+    padding: 10px;
+    cursor: pointer;
+}
+
+.socmed .box .logo i{
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.content{
+    margin-top: 25px;
+}
+
+.content p{
+    text-align: justify;
+}
+
+
+
+
+@media (max-width: 800px) {
+    .cntn .banner {
+        flex-direction: column;
+    }
+
+    .cntn .edit-con {
+        flex-direction: column;
+    }
+
+    .cntn .socmed{
+        flex-direction: column;
+    }
+
+}
+
+
+
+@media only screen and (min-device-width: 200px) and (max-device-width: 600px) {
+
+    .user-profile .header {
+        display: flex;
+        justify-content: center;
+        color: #715C3A;
+    }
+
+    .user-profile .back {
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        width: 100vw;
+        margin-right: 50px;
+    }
+
+    .user-profile .back h1 {
+        font-size: 20px;
+        margin: 25px 25px 25px 25px;
+    }
+
+
+    .user-profile i {
+        font-size: 25px;
+        margin: 25px 40px 25px 15px;
+        cursor: pointer;
+    }
+
+
+    /* ====== CONTENT ====== */
+    .user-profile .cntn {
+        background-color: #F9F3EE;
+        border-radius: 5px;
+        padding: 20px;
+        margin: 20px;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+
+    .user-profile .name {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        max-width: 100vw;
+    }
+
+    .user-profile .name h6 {
+        color: #656565;
+        font-size: 12px;
+        margin-top: -5px;
+    }
+
+    .user-profile .name h1 {
+        font-size: 16px;
+    }
+
+    .user-profile .name i {
+        font-size: 16px;
+    }
+
+    .user-profile .name img {
+        border-radius: 50%;
+        max-width: 70px;
+        max-height: 70px;
+        object-fit: cover;
+        object-position: 25% 25%;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        border-style: solid;
+        border-width: 1px;
+
+    }
+
+    .cntn .banner {}
+
+
+    .cntn .banner img {
+        display: flex;
+        margin: 35px 25px 25px 0px;
+        border-radius: 10px;
+        width: 100%;
+        max-width: 600px;
+        object-fit: cover;
+    }
+
+    .cntn .banner .menu {
+        margin-top: 50px;
+    }
+
+    .cntn .banner .menu li {
+        list-style-type: none;
+    }
+
+    .menu li .btn {
+        background-color: #715C3A;
+        color: white;
+        padding: 0px 25px 25px 5px;
+        font-size: 14px;
+        cursor: pointer;
+        width: 100px;
+        text-align: left;
+        margin-bottom: 10px;
+        width: 100%;
+        height: 45px;
+    }
+
+    #img-preview {
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        height: 175px;
+        border: 2px dashed #333;
+        padding: 10px;
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+
+    #img-preview img {
+        width: 150px;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        object-fit: cover;
+        margin-top: 0px;
+        object-fit: cover;
+    }
+
+    .edit-con .image-upload img {
+        width: 25px;
+        position: absolute;
+        margin: 20px 0px 0px -40px;
+    }
+
+    .info {
+        justify-content: center;
+    }
+
+    .info h6 {
+        margin-top: 20px;
+        color: #715C3A;
+    }
+
+    .info .info-input {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .info input[type=text] {
+        border: none;
+        border-bottom: 2px solid #715C3A;
+        background-color: transparent;
+        width: 250px;
+        margin: 0px 0 0 0px;
+        text-indent: 8px;
+    }
+
+    .info input[type=password] {
+        border: none;
+        border-bottom: 2px solid #715C3A;
+        background-color: transparent;
+        width: 250px;
+        margin: 0px 0 0 0px;
+        text-indent: 8px;
+    }
+
+    .submit-btn {
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .submit-btn input[type=submit] {
+        border: none;
+        border-radius: 5px;
+        background-color: #715C3A;
+        color: white;
+        font-size: 12px;
+        width: 200px;
+        height: 40px;
+    }
+
+    .info-input .warn span {
+        display: block;
+        justify-content: center;
+        font-size: 15px;
+        max-width: 250px;
+        text-align: justify;
+    }
+
+    .info-input i {
+        margin: -2px 0 0 -25px;
+        font-size: 20px;
+    }
+
+    /* ====== Contact Us Css ====== */
+
+    .socmed{
+        flex-direction: row;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .socmed .box{
+        background-color:#c5c4c4;
+        width: 250px;
+        height: 285px;
+        border-radius: 20px;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.309);
+        padding: 10px;
+        cursor: pointer;
+        word-break: break-all;
+    }
+
+    .socmed .box .logo i{
+        font-size: 50px;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .cntn p{
+        text-align: justify;
+    }
+
+
+}
