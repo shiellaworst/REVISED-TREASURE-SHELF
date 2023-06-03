@@ -25,15 +25,15 @@
 			<img src="images/LOGO3BB.png" alt="logo" class="w-[80px] h-[80px]" />
 			<!--* Right Side -->
 			<div class="flex gap-9">
-				<a class="text-black p-2 font-bold hover:text-[#FCA72B]" href="#"
+				<a class="text-black p-2 font-bold hover:text-[#FCA72B]" href="hp-about-us.php"
 					>About</a
 				>
-				<a class="text-black p-2 font-bold hover:text-[#FCA72B]" href="#"
+				<a class="text-black p-2 font-bold hover:text-[#FCA72B]" href="hp-contact-us.php"
 					>Contact Us</a
 				>
 				<a
 					class="py-2 px-8 text-black bg-[#FCA72B] hover:bg-[#F9F3EE] rounded-[20px] font-bold hover:text-yellow-800 transition ease-in duration-150"
-					href="#"
+					href="login.php"
 					>LOGIN</a
 				>
 			</div>
@@ -319,74 +319,102 @@
 			<div
 				class="w-full md:p-16 grid grid-cols-3 md:grid-cols-4 gap-3 md:gap-14"
 			>
+			<a href="bookshelf/shelf_horror.php">
 				<div
 					class="flex text-center border overflow-hidden border-black rounded-full p-4 bg-[#F9F3EE] cursor-pointer"
 				>
 					<img src="images/icons/horror.png" alt="" class="w-auto h-10" />
 					<h1 class="text-xl font-sans font-thin flex-grow">Horror</h1>
 				</div>
+			</a>
+
+			<a href="bookshelf/shelf_sci fi.php">
 				<div
 					class="flex text-center border border-black rounded-full p-4 bg-[#F9F3EE] cursor-pointer"
 				>
 					<img src="images/icons/alien.png" alt="" class="w-auto h-10" />
 					<h1 class="text-xl font-sans font-thin flex-grow">Sci-fi</h1>
 				</div>
+			</a>
+
+			<a href="bookshelf/shelf_methology.php">
 				<div
 					class="flex text-center border border-black rounded-full p-4 bg-[#F9F3EE] cursor-pointer"
 				>
 					<img src="images/icons/myth 1.png" alt="" class="w-auto h-10" />
 					<h1 class="text-xl font-sans font-thin flex-grow">Mythology</h1>
 				</div>
+			</a>
+
+			<a href="bookshelf/shelf_drama.php">
 				<div
 					class="flex text-center border border-black rounded-full p-4 bg-[#F9F3EE] cursor-pointer"
 				>
 					<img src="images/icons/drama 1.png" alt="" class="w-auto h-10" />
 					<h1 class="text-xl font-sans font-thin flex-grow">Drama</h1>
 				</div>
+
+			</a>
+
+			<a href="bookshelf/shelf_romance.php">
 				<div
 					class="flex text-center border border-black rounded-full p-4 bg-[#F9F3EE] cursor-pointer"
 				>
 					<img src="images/icons/love 1.png" alt="" class="w-auto h-10" />
 					<h1 class="text-xl font-sans font-thin flex-grow">Romance</h1>
 				</div>
+			</a>
+			<a href="bookshelf/shelf_fiction.php">
 				<div
 					class="flex text-center border border-black rounded-full p-4 bg-[#F9F3EE] cursor-pointer"
 				>
 					<img src="images/icons/fiction 1.png" alt="" class="w-auto h-10" />
 					<h1 class="text-xl font-sans font-thin flex-grow">Fiction</h1>
 				</div>
+			</a>
+			<a href="bookshelf/shelf_history.php">
 				<div
 					class="flex text-center border border-black rounded-full p-4 bg-[#F9F3EE] cursor-pointer"
 				>
 					<img src="images/icons/history 1.png" alt="" class="w-auto h-10" />
 					<h1 class="text-xl font-sans font-thin flex-grow">History</h1>
 				</div>
+			</a>
 
+			<a href="bookshelf/shelf_fable.php">
 				<div
 					class="flex text-center border border-black rounded-full p-4 bg-[#F9F3EE] cursor-pointer"
 				>
 					<img src="images/icons/fable 1.png" alt="" class="w-auto h-10" />
 					<h1 class="text-xl font-sans font-thin flex-grow">Fable</h1>
 				</div>
-				<div class="hidden md:block"></div>
-				<div
-					class="flex text-center border border-black rounded-full p-4 bg-[#F9F3EE] cursor-pointer"
-				>
-					<img
-						src="images/icons/toyota girl 1.png"
-						alt=""
-						class="w-auto h-10"
-					/>
-					<h1 class="text-xl font-sans font-thin flex-grow">Novel</h1>
-				</div>
+			</a>
 
+			
+				<div class="hidden md:block"></div>
+				
+				<a href="bookshelf/shelf_novel.php">
+					<div
+						class="flex text-center border border-black rounded-full p-4 bg-[#F9F3EE] cursor-pointer"
+					>
+						<img
+							src="images/icons/toyota girl 1.png"
+							alt=""
+							class="w-auto h-10"
+						/>
+						<h1 class="text-xl font-sans font-thin flex-grow">Novel</h1>
+					</div>
+			</a>
+			<a href="bookshelf/shelf_selfhelp.php">
 				<div
 					class="flex text-center border border-black rounded-full p-4 bg-[#F9F3EE] cursor-pointer"
 				>
 					<img src="images/icons/kid 1.png" alt="" class="w-auto h-10" />
 					<h1 class="text-xl font-sans font-thin flex-grow">Self Help</h1>
 				</div>
+			
 				<div class="hidden md:block"></div>
+			</a>
 			</div>
 		</section>
 

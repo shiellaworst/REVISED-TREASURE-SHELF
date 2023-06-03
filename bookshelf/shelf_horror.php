@@ -2,15 +2,15 @@
 require_once "../database.php";
 $books = getRecomCLick8();
 
-session_start(); // Start the session to access $_SESSION
-if (!isset($_SESSION['user_id'])) {
-    // User is not logged in, redirect to the login page
-    header('Location: index.php');
-    exit();
-}
-if (isset($_SESSION['user_id'])) { // Check if user_id is set in $_SESSION
-    //  echo "User ID: " . $_SESSION['user_id']; // Output the user ID
-}
+// session_start(); // Start the session to access $_SESSION
+// if (!isset($_SESSION['user_id'])) {
+//     // User is not logged in, redirect to the login page
+//     header('Location: index.php');
+//     exit();
+// }
+// if (isset($_SESSION['user_id'])) { // Check if user_id is set in $_SESSION
+//     //  echo "User ID: " . $_SESSION['user_id']; // Output the user ID
+// }
 
 ?>
 

@@ -3,14 +3,14 @@ require_once "../database.php";
 $books = getRecomCLick15();
 
 session_start(); // Start the session to access $_SESSION
-if (!isset($_SESSION['user_id'])) {
-    // User is not logged in, redirect to the login page
-    header('Location: index.php');
-    exit();
-}
-if (isset($_SESSION['user_id'])) { // Check if user_id is set in $_SESSION
-    //  echo "User ID: " . $_SESSION['user_id']; // Output the user ID
-}
+// if (!isset($_SESSION['user_id'])) {
+//     // User is not logged in, redirect to the login page
+//     header('Location: index.php');
+//     exit();
+// }
+// if (isset($_SESSION['user_id'])) { // Check if user_id is set in $_SESSION
+//     //  echo "User ID: " . $_SESSION['user_id']; // Output the user ID
+// }
 
 ?>
 
@@ -34,7 +34,7 @@ if (isset($_SESSION['user_id'])) { // Check if user_id is set in $_SESSION
 </head>
 <body>
     <div class="genre">
-        <div class="upper" onclick="window.location.href='../homepage.php?user_id=<?php echo $_SESSION['user_id']; ?>'">
+        <div class="upper">
             <h2>ROMANCE</h2>
             <div class="back"><br>
                 <i class="bi bi-arrow-left" ></i>
@@ -103,7 +103,7 @@ if (isset($_SESSION['user_id'])) { // Check if user_id is set in $_SESSION
                 ?>
                 <?php
                                     // Display the first book
-                    $book = $books[4];
+                    $book = $books[34];
                     echo '<a href="../book-display.php?id=' . $book['id'] . '">';
                     echo "<div class='max-w-sm rounded overflow-hidden shadow-lg'>";
                     echo "<img class='w-full' src='" . $book['image'] . "' alt='Image description'>";
@@ -114,7 +114,7 @@ if (isset($_SESSION['user_id'])) { // Check if user_id is set in $_SESSION
                 ?>
                 <?php
                                     // Display the first book
-                    $book = $books[5];
+                    $book = $books[15];
                     echo '<a href="../book-display.php?id=' . $book['id'] . '">';
                     echo "<div class='max-w-sm rounded overflow-hidden shadow-lg'>";
                     echo "<img class='w-full' src='" . $book['image'] . "' alt='Image description'>";
@@ -152,7 +152,7 @@ if (isset($_SESSION['user_id'])) { // Check if user_id is set in $_SESSION
                 ?>
                 <?php
                                     // Display the first book
-                    $book = $books[8];
+                    $book = $books[18];
                     echo '<a href="../book-display.php?id=' . $book['id'] . '">';
                     echo "<div class='max-w-sm rounded overflow-hidden shadow-lg'>";
                     echo "<img class='w-full' src='" . $book['image'] . "' alt='Image description'>";
@@ -181,7 +181,7 @@ if (isset($_SESSION['user_id'])) { // Check if user_id is set in $_SESSION
             ?>
             <?php
                                 // Display the first book
-                $book = $books[10];
+                $book = $books[22];
                 echo '<a href="../book-display.php?id=' . $book['id'] . '">';
                 echo "<div class='max-w-sm rounded overflow-hidden shadow-lg'>";
                 echo "<img class='w-full' src='" . $book['image'] . "' alt='Image description'>";

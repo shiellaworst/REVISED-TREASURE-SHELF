@@ -3,34 +3,34 @@
 // Start session
 session_start();
 
-if (!isset($_SESSION['user_id'])) {
-    // User is not logged in, redirect to the login page
-    header('Location: index.php');
-    exit();
-  }
+// if (!isset($_SESSION['user_id'])) {
+//     // User is not logged in, redirect to the login page
+//     header('Location: index.php');
+//     exit();
+//   }
   
-// Database configuration
+// // Database configuration
 
-include('connection.php');
+// include('connection.php');
 
-// Get user data from database
-$user_id = $_SESSION['user_id']; // Get user ID from session
-$query = "SELECT * FROM `users` WHERE id = '$user_id'";
-$result = mysqli_query($conn, $query);
+// // Get user data from database
+// $user_id = $_SESSION['user_id']; // Get user ID from session
+// $query = "SELECT * FROM `users` WHERE id = '$user_id'";
+// $result = mysqli_query($conn, $query);
 
-if ($result) {
-  $row = mysqli_fetch_assoc($result);
-  $lname = $row['lname'];
-  $fname = $row['fname'];
-  $mi = $row['mi'];
-  $email = $row['email'];
-  $mi = $row['mi'];
-  $password = $row['password'];
-  $user_img = $row['user_img'];
-} else {
+// if ($result) {
+//   $row = mysqli_fetch_assoc($result);
+//   $lname = $row['lname'];
+//   $fname = $row['fname'];
+//   $mi = $row['mi'];
+//   $email = $row['email'];
+//   $mi = $row['mi'];
+//   $password = $row['password'];
+//   $user_img = $row['user_img'];
+// } else {
   
-  echo "Error: " . mysqli_error($conn);
-}
+//   echo "Error: " . mysqli_error($conn);
+// }
 
 
 ?>
@@ -77,7 +77,7 @@ if ($result) {
 
         <div class="cntn">
             
-                <input type="hidden" name="id" value="<?php echo $row['id'] ?>" />
+                <!-- <input type="hidden" name="id" value="<?php echo $row['id'] ?>" />
 
                 <div class="name" style="justify-content:center;">
                     <div>
@@ -91,7 +91,7 @@ if ($result) {
                         <i class="bi bi-pencil-square" Onclick="window.location.href='hp-edit-profile.php'"></i>
                     </div>
 
-                </div>
+                </div> -->
 
                 <span><p>Welcome to Treasure Shelf: Book Recommendations ! We are a team of passionate readers and tech enthusiasts who have come together to create a platform that connects book lovers with their next great read.
 

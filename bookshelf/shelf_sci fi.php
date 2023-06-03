@@ -2,15 +2,15 @@
 require_once "../database.php";
 $books = getRecomCLick17();
 
-session_start(); // Start the session to access $_SESSION
-if (!isset($_SESSION['user_id'])) {
-    // User is not logged in, redirect to the login page
-    header('Location: index.php');
-    exit();
-}
-if (isset($_SESSION['user_id'])) { // Check if user_id is set in $_SESSION
-    //  echo "User ID: " . $_SESSION['user_id']; // Output the user ID
-}
+// session_start(); // Start the session to access $_SESSION
+// if (!isset($_SESSION['user_id'])) {
+//     // User is not logged in, redirect to the login page
+//     header('Location: index.php');
+//     exit();
+// }
+// if (isset($_SESSION['user_id'])) { // Check if user_id is set in $_SESSION
+//     //  echo "User ID: " . $_SESSION['user_id']; // Output the user ID
+// }
 
 ?>
 
@@ -61,6 +61,26 @@ if (isset($_SESSION['user_id'])) { // Check if user_id is set in $_SESSION
                         echo "</div></div></a>";
                         
                     ?>
+                    <?php
+                                        // Display the first book
+                        $book = $books[1];
+                        echo '<a href="../book-display.php?id=' . $book['id'] . '">';
+                        echo "<div class='max-w-sm rounded overflow-hidden shadow-lg'>";
+                        echo "<img class='w-full' src='" . $book['image'] . "' alt='Image description'>";
+                        echo "<div class='px-6 py-4'>";
+
+                        echo "</div></div></a>";
+                        
+                    ?>
+                    <?php
+                                        // Display the first book
+                        $book = $books[2];
+                        echo '<a href="../book-display.php?id=' . $book['id'] . '">';
+                        echo "<div class='max-w-sm rounded overflow-hidden shadow-lg'>";
+                        echo "<img class='w-full' src='" . $book['image'] . "' alt='Image description'>";
+                        echo "<div class='px-6 py-4'>";
+                        echo "</div></div></a>";
+                    ?>
                    
                 
                     </div>
@@ -70,7 +90,37 @@ if (isset($_SESSION['user_id'])) { // Check if user_id is set in $_SESSION
         <div class="bookshelf">
         <div class="container">
             <div class="shelf-list">
-                
+            <?php
+                                    // Display the first book
+                    $book = $books[25];
+                    echo '<a href="../book-display.php?id=' . $book['id'] . '">';
+                    echo "<div class='max-w-sm rounded overflow-hidden shadow-lg'>";
+                    echo "<img class='w-full' src='" . $book['image'] . "' alt='Image description'>";
+                    echo "<div class='px-6 py-4'>";
+
+                    echo "</div></div></a>";
+                    
+                ?>
+                <?php
+                                    // Display the first book
+                    $book = $books[4];
+                    echo '<a href="../book-display.php?id=' . $book['id'] . '">';
+                    echo "<div class='max-w-sm rounded overflow-hidden shadow-lg'>";
+                    echo "<img class='w-full' src='" . $book['image'] . "' alt='Image description'>";
+                    echo "<div class='px-6 py-4'>";
+
+                    echo "</div></div></a>";
+                    
+                ?>
+                <?php
+                                    // Display the first book
+                    $book = $books[5];
+                    echo '<a href="../book-display.php?id=' . $book['id'] . '">';
+                    echo "<div class='max-w-sm rounded overflow-hidden shadow-lg'>";
+                    echo "<img class='w-full' src='" . $book['image'] . "' alt='Image description'>";
+                    echo "<div class='px-6 py-4'>";
+                    echo "</div></div></a>";
+                ?>
             </div>
         </div>
         </div>
@@ -78,7 +128,37 @@ if (isset($_SESSION['user_id'])) { // Check if user_id is set in $_SESSION
         <div class="bookshelf">
         <div class="container">
             <div class="shelf-list">
-                
+            <?php
+                                    // Display the first book
+                    $book = $books[6];
+                    echo '<a href="../book-display.php?id=' . $book['id'] . '">';
+                    echo "<div class='max-w-sm rounded overflow-hidden shadow-lg'>";
+                    echo "<img class='w-full' src='" . $book['image'] . "' alt='Image description'>";
+                    echo "<div class='px-6 py-4'>";
+
+                    echo "</div></div></a>";
+                    
+                ?>
+                <?php
+                                    // Display the first book
+                    $book = $books[31];
+                    echo '<a href="../book-display.php?id=' . $book['id'] . '">';
+                    echo "<div class='max-w-sm rounded overflow-hidden shadow-lg'>";
+                    echo "<img class='w-full' src='" . $book['image'] . "' alt='Image description'>";
+                    echo "<div class='px-6 py-4'>";
+
+                    echo "</div></div></a>";
+                    
+                ?>
+                <?php
+                                    // Display the first book
+                    $book = $books[8];
+                    echo '<a href="../book-display.php?id=' . $book['id'] . '">';
+                    echo "<div class='max-w-sm rounded overflow-hidden shadow-lg'>";
+                    echo "<img class='w-full' src='" . $book['image'] . "' alt='Image description'>";
+                    echo "<div class='px-6 py-4'>";
+                    echo "</div></div></a>";
+                ?>
             </div>
         </div>
         </div>
@@ -88,7 +168,37 @@ if (isset($_SESSION['user_id'])) { // Check if user_id is set in $_SESSION
         <div class="bookshelf">
         <div class="container">
             <div class="shelf-list">
-           
+            <?php
+                                // Display the first book
+                $book = $books[9];
+                echo '<a href="../book-display.php?id=' . $book['id'] . '">';
+                echo "<div class='max-w-sm rounded overflow-hidden shadow-lg'>";
+                echo "<img class='w-full' src='" . $book['image'] . "' alt='Image description'>";
+                echo "<div class='px-6 py-4'>";
+
+                echo "</div></div></a>";
+                
+            ?>
+            <?php
+                                // Display the first book
+                $book = $books[10];
+                echo '<a href="../book-display.php?id=' . $book['id'] . '">';
+                echo "<div class='max-w-sm rounded overflow-hidden shadow-lg'>";
+                echo "<img class='w-full' src='" . $book['image'] . "' alt='Image description'>";
+                echo "<div class='px-6 py-4'>";
+
+                echo "</div></div></a>";
+                
+            ?>
+            <?php
+                                // Display the first book
+                $book = $books[15];
+                echo '<a href="../book-display.php?id=' . $book['id'] . '">';
+                echo "<div class='max-w-sm rounded overflow-hidden shadow-lg'>";
+                echo "<img class='w-full' src='" . $book['image'] . "' alt='Image description'>";
+                echo "<div class='px-6 py-4'>";
+                echo "</div></div></a>";
+            ?>
 
             </div>
         </div>
