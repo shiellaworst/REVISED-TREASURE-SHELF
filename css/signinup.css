@@ -4,7 +4,7 @@ html, body{
     max-height: 90vh;
   }
   Body{
-    background-image: url("../images/wall1.png");
+    background-image: url("../images/wall2.png");
     background-size: 130vw 150vh;
     font-family: 'Roboto', sans-serif;
     background-repeat: no-repeat;
@@ -68,17 +68,6 @@ html, body{
     font-size: 20px;
 }
 
-.npt input[type='text']
-{
-    border: none;
-    border-bottom: 2px solid rgb(38, 38, 38);
-    background-color:transparent;
-    width: 205px;
-    color: rgb(0, 0, 0);
-    margin-bottom: 15px;
-    font-size: 20px;
-    
-}
 
 .npt input[type='submit']{
     background-color: #b1b5b789;
@@ -129,8 +118,8 @@ span a{
     max-width: 200px;
 }
 .register {
-    margin-top: 75px;
-    display: flex;
+    margin-top: -20px;
+    display: flex !important;
     justify-content: center;
 }
 
@@ -215,7 +204,18 @@ span a{
 .emailBox{
     margin-bottom: 10px;
 }
-
+.lnameText{
+    margin-top: -5px;
+    width: 200px;
+}
+.fnameText{
+    margin-top: -5px;
+    width: 200px;
+}
+.miText{
+    margin-top: -5px;
+    width: 200px;
+}
 .npt1 input::placeholder{
     font-size: 20px;
     color: rgb(52, 52, 52);
@@ -228,10 +228,9 @@ span a{
     border-radius: 20px;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.446);
 }
-.register .npt i{
-    position: absolute;
-    margin-left: 185px;
-    margin-top: 5px;
+
+.error {
+    color: red;
 }
 
 
@@ -239,7 +238,7 @@ span a{
 /*** MOBILE VIEW****/
 
   
-  @media only screen and (min-device-width: 250px) and (max-device-width: 500px) {
+  @media only screen and (min-device-width: 320px) and (max-device-width: 360px) {
 
     Body{
         background-image: url("../images/wall1.png");
@@ -348,28 +347,16 @@ span a{
         color: brown;
     }
     
-    .register .npt i{
-        position: absolute;
-        margin-left: 185px;
-        margin-top: 5px;
-    }
+    
     
     /*** signup****/
-
-    .register-box{
-        background-color: #fff6e771 ;
-        max-height: fit-content;
-        margin: 40px;
-        border-radius: 20px;
-        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.446);
-    }
     
     .register img{
         max-width: 200px;
     }
     .register {
         margin-top: -20px;
-        display: flex;
+        display: flex !important;
         justify-content: center;
     }
     
@@ -453,6 +440,18 @@ span a{
     }
     .emailBox{
         margin-bottom: 10px;
+    } 
+    .lnameText{
+        margin-top: -5px;
+        width: 200px;
+    }
+    .fnameText{
+        margin-top: -5px;
+        width: 200px;
+    }
+    .miText{
+        margin-top: -5px;
+        width: 200px;
     }
     
     .npt1 input::placeholder{
@@ -471,4 +470,3 @@ span a{
 
 
   }
-

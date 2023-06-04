@@ -104,7 +104,51 @@ At our core, we believe that reading is a transformative experience that can bro
 We are committed to creating a seamless and user-friendly experience for our users. Whether you're looking for your next page-turner or want to explore a new genre, we've got you covered. Join us on this exciting journey and let's discover the world of books together!
 </p></span>
 
-            
+        <div class="container">
+            <h1 class="front"><b>Front-End Developer</b></h1>
+            <img src="images/pic carl.jpg" style="width: 30px , height: 40px" class="center" >
+            <h3 class="front">Sy,Carl Emmanuel A.</h3>
+            <p class="front">sy.carl.bscs2019@gmail.com</p>
+            <p class="front">09301250774</p>
+        </div>
+        <div class="container">
+            <h1 class="front"><b>Front-End Developer</b></h1>
+            <img src="images/pic joy.jpg" style="width: 50px , height: 50px" class="center" >
+            <h3 class="front">Lacopanto, Mary Joy</h3>
+            <p class="front">lacopanto.mary joy.bscs2019@gmail.com</p>
+            <p class="front">09072728529</p>
+        </div>
+        <div class="container">
+            <h1 class="front"><b>Front-End Developer</b></h1>
+            <img src="images/pic riego.jpg" style="width: 50px , height: 50px" class="center" >
+            <h3 class="front">Riego, Jennylyn B.</h3>
+            <p class="front">riego.jennylyn.bscs2019@gmail.com</p>
+            <p class="front">09771406794</p>
+        </div>
+        <div class="container">
+            <h1 class="front"><b>Back-End Developer</b></h1>
+            <img src="images/pic sajol.jpeg" style="width: 50px , height: 50px" class="center" >
+            <h3 class="front">Sajol, Shiella May M.</h3>
+            <p class="front">sajol.shiellamay.bscs2019@gmail.com</p>
+            <p class="front">09093660451</p>
+        </div>
+        <div class="container">
+            <h1 class="front"><b>Back-End Developer</b></h1>
+            <img src="images/pic romar.png" style="width: 50px , height: 50px" class="center" >
+            <h3 class="front">Montero, Romar S.</h3>
+            <p class="front">montero.romar.bscs2019@gmail.com</p>
+            <p class="front">09153740498</p>
+        </div>
+        <div class="container">
+            <h1 class="front"><b>Quality Assurance</b></h1>
+            <img src="images/pic naval.jpg" style="width: 50px , height: 50px" class="center" >
+            <h3 class="front">Naval, Mary Eugenia D.C</h3>
+            <p class="front">naval.maryeugenia.bscs2019@gmail.com</p>
+            <p class="front">09652103059</p>
+        </div>  
+
+        
+        
         </div>
 
 

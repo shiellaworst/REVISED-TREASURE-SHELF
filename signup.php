@@ -59,7 +59,6 @@ function sendMail($email,$v_code)
     return false;}
 }
 
-
 if (isset($_POST['submit']))
 {
     $user_exist_query="SELECT * FROM `users` WHERE `email`='$_POST[email]'";
@@ -135,23 +134,32 @@ if (isset($_POST['submit']))
 
     <div class="signup-box">
         <form action="#" method="POST">
-        <div class="login-box">
-                <div class="register">
-                    <div class="npt">
+        <div class="login-boxs">
+            <div class="register">
+                <div class="npt1">
                     <img src="images/ts-logo1.png">
                     
-                    <div>
-                        <i class="bi bi-x-circle" onclick="document.getElementById('lname').value = ''"></i>
-                        <input name="lname" type="text" id="lname" placeholder="Last Name" required>
+                    <div class="lnameBox">
+                        <div>
+                             <i class="bi bi-x-circle" onclick="document.getElementById('lname').value = ''"></i>
+                             <input name="lname" type="text" id="lname" placeholder="Last Name" required>
+                             <span class="lnameText" id="color-span"></span>
+                        </div>
                     </div>
-                    <div>
-                        <i class="bi bi-x-circle" onclick="document.getElementById('fname').value = ''"></i>
-                        <input name="fname" Type="text" id="fname" placeholder="First Name" required>
-                    </div>
-                    <div>
-                        <i class="bi bi-x-circle" onclick="document.getElementById('mi').value = ''"></i>
-                        <input name="mi" Type="text" id="mi" placeholder="Middle Initial" required>
-                    </div>
+
+                        <div>
+                            <i class="bi bi-x-circle" onclick="document.getElementById('fname').value = ''"></i>
+                            <input name="fname" type="text" id="fname" placeholder="First Name" required>
+                        </div>
+
+                    <div class="miBox">
+                        <div>
+                            <i class="bi bi-x-circle" onclick="document.getElementById('mi').value = ''"></i>
+                            <input name="mi" type="text" id="mi" placeholder="Middle Initial" required>
+                            <span class="miText" id="color-span"></span>
+                        </div>
+                     </div>
+
                     
                     <div class="emailBox">
                         <div>
@@ -195,6 +203,9 @@ if (isset($_POST['submit']))
         const colorSpan = document.getElementById("color-span");
         const colorSpan1 = document.getElementById("color-span1");
         const colorSpan2 = document.getElementById("color-span2");
+        const lname = document.getElementById("lname");
+        const fname = document.getElementById("fname");
+        const mi = document.getElementById("mi");
 
         email.addEventListener('input', () => {
             const emailBox = document.querySelector('.emailBox');
@@ -250,6 +261,25 @@ if (isset($_POST['submit']))
             }
 
         });
+
+        lname.addEventListener('input', (event) => {
+                const input = event.target.value;
+                const sanitizedInput = input.replace(/[0-9!@#$%^&*(),.?":{}|<>]/, '');
+                event.target.value = sanitizedInput;
+        });
+
+        fname.addEventListener('input', (event) => {
+                const input = event.target.value;
+                const sanitizedInput = input.replace(/[0-9!@#$%^&*(),.?":{}|<>]/, '');
+                event.target.value = sanitizedInput;
+        });
+
+
+        mi.addEventListener('input', (event) => {
+                const input = event.target.value;
+                const sanitizedInput = input.replace(/[0-9!@#$%^&*(),.?":{}|<>]/, '');
+                event.target.value = sanitizedInput;
+        });;
 
 
         const togglePassword = document.querySelector("#togglePassword");
